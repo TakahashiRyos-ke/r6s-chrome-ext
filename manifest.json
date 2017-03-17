@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rainbow 6 Siege Tools",
+  "description": "This extension sorts your operator stats by Win/Loss ratio on page load",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://game-rainbow6.ubi.com/*/player-statistics/*/multiplayer"],
+      "js": [
+        "arrive.min.js",
+        "main.js"
+      ]
+    }
+  ]
+}
